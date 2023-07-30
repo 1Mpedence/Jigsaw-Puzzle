@@ -24,7 +24,7 @@ span {
 
 .container-fluid {
     background: rgb(225, 144, 226);
-    height: min-content;
+    height: min-content !important;
 }
 
 mat-button-toggle-group,
