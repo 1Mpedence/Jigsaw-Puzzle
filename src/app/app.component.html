@@ -23,6 +23,9 @@
         <span class="text-white toggle">Show Image</span>
         </mat-slide-toggle>
       </div>
+      <div class="col-auto text-white">
+        Pieces Solved: {{ success }}
+      </div>
     </div>
   </section>
   <ng-container>
@@ -68,4 +71,5 @@
       </div>
     </div>
   </ng-container>
+  <app-confetti *ngIf="success===100"></app-confetti>
 </div>
