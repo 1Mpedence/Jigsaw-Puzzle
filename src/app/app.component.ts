@@ -70,7 +70,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   cdkDragEnded(pos: any){
     const [yi, xi] = pos.event.srcElement.currentSrc.split('/').slice(-1)[0].split('.')[0].split('');
     
-    console.log("Hi");
     const y = Math.floor((pos.dropPoint.x - this.containerPos.x - 2)/62);
     const x = Math.floor((pos.dropPoint.y - this.containerPos.y - 2)/42);
     const idx = this.imagesList.findIndex((img: any) => (img.xi === x && img.yi === y));
