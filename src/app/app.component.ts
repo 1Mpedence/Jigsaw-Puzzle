@@ -20,6 +20,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   imagesList: any = [];
 
+  imagesListCopy: any = [];
+
   imagesSolve: any = [];
 
   checked = false;
@@ -53,6 +55,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
       );
     }
+    this.imagesListCopy = [...this.imagesList];
   }
 
   ngAfterViewInit() {

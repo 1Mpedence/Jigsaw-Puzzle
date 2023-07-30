@@ -28,7 +28,7 @@
   <ng-container>
     <div cdkDropListGroup class="overflow-hidden d-flex flex-column justify-content-center align-items-center gap-5 py-3">
       <div class="example-container border"
-      #elementRefName
+        #elementRefName
       >
         <div
           cdkDropList
@@ -47,7 +47,7 @@
             </div>
           </ng-container>
           <ng-container *ngIf="checked">
-            <div id="hello" class="img-container border border-1" *ngFor="let item of imagesList">
+            <div id="hello" class="img-container border border-1" *ngFor="let item of imagesListCopy">
               <img [src]="item.imgUrl" alt="">
             </div>
           </ng-container>
