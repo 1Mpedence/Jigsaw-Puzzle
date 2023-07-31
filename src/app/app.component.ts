@@ -26,7 +26,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   checked = false;
 
-  puzzleList = ['tree', 'rue', 'jungkook'];
+  puzzleList = ['tree'];
   
   ngOnInit(): void {
     this.generatePuzzle();
