@@ -55,7 +55,8 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
       );
     }
-    this.imagesListCopy = [...this.imagesList]
+    this.imagesListCopy = [...this.imagesList];
+    this.imagesList.sort(() => 0.5 - Math.random());
   }
 
   ngAfterViewInit() {
