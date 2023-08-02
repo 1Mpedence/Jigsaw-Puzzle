@@ -38,7 +38,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     for(let i=0 ; i<=99 ; ++i) {
       const [x, y] = [Math.floor(i/10), i%10];
       const imgNo = ('0'+(x+y*10)).slice(-2);
-      this.imagesList.push(
+      this.imagesListCopy.push(
         {
           x: 0,
           y:0,
@@ -55,8 +55,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
       );
     }
-    this.imagesListCopy = [...this.imagesList];
-    this.imagesList.sort(() => 0.5 - Math.random());
+    this.imagesListCopy = [...this.imagesListCopy].sort(() => 0.5 - Math.random());
   }
 
   ngAfterViewInit() {
