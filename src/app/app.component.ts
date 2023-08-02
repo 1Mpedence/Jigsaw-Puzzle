@@ -33,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   generatePuzzle() {
     this.imagesList = [];
     this.imagesSolve = [];
+    this.imagesListCopy = [];
     this.success = 0;
     for(let i=0 ; i<=99 ; ++i) {
       const [x, y] = [Math.floor(i/10), i%10];
