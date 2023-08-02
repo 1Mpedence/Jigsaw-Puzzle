@@ -10,10 +10,6 @@
 
 h1 {
     letter-spacing: 0.5em;
-    width: 24ch;
-    animation: animate 2s steps(24);
-    overflow: hidden;
-    word-break: keep-all;
 }
 
 @keyframes animate {
