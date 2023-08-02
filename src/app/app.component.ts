@@ -1,4 +1,3 @@
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   checked = false;
 
-  puzzleList = ['tree', 'rue', 'jungkook'];
+  puzzleList = ['tree'];
   
   ngOnInit(): void {
     this.generatePuzzle();
@@ -55,7 +54,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
       );
     }
-    this.imagesListCopy = [...this.imagesListCopy].sort(() => 0.5 - Math.random());
+    this.imagesList = [...this.imagesListCopy].sort(() => 0.5 - Math.random());
   }
 
   ngAfterViewInit() {
