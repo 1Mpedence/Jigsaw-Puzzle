@@ -23,10 +23,10 @@ import { ConfettiComponent } from './confetti/confetti.component';
     BrowserAnimationsModule,
     DragDropModule,
     MatSlideToggleModule,
-    NgSelectModule,
+    // NgSelectModule,
     FormsModule,
     MatRadioModule,
-    MatButtonToggleModule
+    // MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
